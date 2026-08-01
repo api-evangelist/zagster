@@ -1,7 +1,24 @@
 aid: zagster
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/zagster.png
 name: Zagster
-description: Zagster is a company surfaced as a portfolio company of techstars and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: Zagster was a venture-funded bike-share startup based in Boston, Massachusetts
+  (a Techstars portfolio company) that designed, built, and operated bike-sharing programs
+  for cities, universities, corporate campuses, hotels, and residential communities across
+  the United States, peaking at more than 200 programs in 2019. The company ceased bike-share
+  operations in June 2020 amid the COVID-19 pandemic and is now defunct. Its former developer
+  API host (zapi.zagster.com/api/v1/bikeshares) no longer resolves, and zagster.com is now a
+  parked domain, so there is no live API surface to enrich.
 url: https://raw.githubusercontent.com/api-evangelist/zagster/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -9,11 +26,18 @@ x-backed-by:
 - techstars
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-defunct: true
+x-defunct-reason: Ceased bike-share operations June 2020 (COVID-19); domain now parked, API host NXDOMAIN.
+x-historical-api: https://zapi.zagster.com/api/v1/bikeshares/ (dead; host no longer resolves as of 2026-07-21)
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
+- Bike Share
+- Mobility
+- Transportation
+- Defunct
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,3 +47,8 @@ maintainers:
 common:
 - type: Website
   url: https://zagster.com/
+x-enrichment:
+  date: '2026-07-21'
+  status: nochange
+  artifacts_added: 0
+  pass: local-v1
